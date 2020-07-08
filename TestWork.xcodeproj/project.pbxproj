@@ -13,6 +13,10 @@
 		AEDB784924B5E755009BEDF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEDB784724B5E755009BEDF8 /* Main.storyboard */; };
 		AEDB784B24B5E758009BEDF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEDB784A24B5E758009BEDF8 /* Assets.xcassets */; };
 		AEDB784E24B5E758009BEDF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEDB784C24B5E758009BEDF8 /* LaunchScreen.storyboard */; };
+		AEDB785624B5EC70009BEDF8 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB785524B5EC70009BEDF8 /* UIViewExtension.swift */; };
+		AEDB785824B5F877009BEDF8 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB785724B5F877009BEDF8 /* UIButtonExtension.swift */; };
+		AEDB785A24B5FF7C009BEDF8 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEDB785924B5FF7C009BEDF8 /* MainView.xib */; };
+		AEDB785C24B5FF85009BEDF8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB785B24B5FF85009BEDF8 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		AEDB784A24B5E758009BEDF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEDB784D24B5E758009BEDF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEDB784F24B5E758009BEDF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEDB785524B5EC70009BEDF8 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		AEDB785724B5F877009BEDF8 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		AEDB785924B5FF7C009BEDF8 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		AEDB785B24B5FF85009BEDF8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +67,32 @@
 				AEDB784124B5E755009BEDF8 /* AppDelegate.swift */,
 				AEDB784324B5E755009BEDF8 /* SceneDelegate.swift */,
 				AEDB784524B5E755009BEDF8 /* ViewController.swift */,
+				AEDB785E24B5FF93009BEDF8 /* Extension */,
+				AEDB785D24B5FF8A009BEDF8 /* Xib */,
 				AEDB784724B5E755009BEDF8 /* Main.storyboard */,
 				AEDB784A24B5E758009BEDF8 /* Assets.xcassets */,
 				AEDB784C24B5E758009BEDF8 /* LaunchScreen.storyboard */,
 				AEDB784F24B5E758009BEDF8 /* Info.plist */,
 			);
 			path = TestWork;
+			sourceTree = "<group>";
+		};
+		AEDB785D24B5FF8A009BEDF8 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				AEDB785B24B5FF85009BEDF8 /* MainView.swift */,
+				AEDB785924B5FF7C009BEDF8 /* MainView.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		AEDB785E24B5FF93009BEDF8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AEDB785524B5EC70009BEDF8 /* UIViewExtension.swift */,
+				AEDB785724B5F877009BEDF8 /* UIButtonExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEDB784E24B5E758009BEDF8 /* LaunchScreen.storyboard in Resources */,
+				AEDB785A24B5FF7C009BEDF8 /* MainView.xib in Resources */,
 				AEDB784B24B5E758009BEDF8 /* Assets.xcassets in Resources */,
 				AEDB784924B5E755009BEDF8 /* Main.storyboard in Resources */,
 			);
@@ -139,7 +168,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEDB784624B5E755009BEDF8 /* ViewController.swift in Sources */,
+				AEDB785C24B5FF85009BEDF8 /* MainView.swift in Sources */,
+				AEDB785824B5F877009BEDF8 /* UIButtonExtension.swift in Sources */,
 				AEDB784224B5E755009BEDF8 /* AppDelegate.swift in Sources */,
+				AEDB785624B5EC70009BEDF8 /* UIViewExtension.swift in Sources */,
 				AEDB784424B5E755009BEDF8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 97T697ANXW;
 				INFOPLIST_FILE = TestWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 97T697ANXW;
 				INFOPLIST_FILE = TestWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
